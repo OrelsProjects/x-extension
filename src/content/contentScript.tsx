@@ -1,8 +1,8 @@
-import Content from "./Content";
+import Content from "@/content/content";
 import ReactDOM from "react-dom";
 
 // Create a container element for the extension UI
-const containerId = "my-ext-orel-root";
+const containerId = "my-root";
 let container = document.getElementById(containerId);
 
 if (!container) {

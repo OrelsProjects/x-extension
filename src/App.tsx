@@ -1,9 +1,7 @@
+import "@/content/contentScript";
+
 function App() {
-  return (
-    <div className="z-[99999] relative pointer-events-none">
-      <div className="bg-red-500 w-10 h-10 rounded-full absolute top-0 left-0"></div>
-    </div>
-  );
+  return <div className="h-screen w-screen bg-ext-background" />;
 }
 
 export default App;

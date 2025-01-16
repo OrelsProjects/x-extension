@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  prefix: "ext-orel-", // Add a unique prefix to all Tailwind classes
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -11,40 +10,40 @@ export default {
         sm: "calc(var(--radius-ext-orel) - 4px)",
       },
       colors: {
-        background: "hsl(var(--background-ext-orel))",
-        foreground: "hsl(var(--foreground-ext-orel))",
-        card: {
+        "ext-background": "hsl(var(--background-ext-orel))",
+        "ext-foreground": "hsl(var(--foreground-ext-orel))",
+        "ext-card": {
           DEFAULT: "hsl(var(--card-ext-orel))",
           foreground: "hsl(var(--card-foreground-ext-orel))",
         },
-        popover: {
+        "ext-card": {
           DEFAULT: "hsl(var(--popover-ext-orel))",
           foreground: "hsl(var(--popover-foreground-ext-orel))",
         },
-        primary: {
+        "ext-primary": {
           DEFAULT: "hsl(var(--primary-ext-orel))",
           foreground: "hsl(var(--primary-foreground-ext-orel))",
         },
-        secondary: {
+        "ext-secondary": {
           DEFAULT: "hsl(var(--secondary-ext-orel))",
           foreground: "hsl(var(--secondary-foreground-ext-orel))",
         },
-        muted: {
+        "ext-muted": {
           DEFAULT: "hsl(var(--muted-ext-orel))",
           foreground: "hsl(var(--muted-foreground-ext-orel))",
         },
-        accent: {
+        "ext-accent": {
           DEFAULT: "hsl(var(--accent-ext-orel))",
           foreground: "hsl(var(--accent-foreground-ext-orel))",
         },
-        destructive: {
+        "ext-destructive": {
           DEFAULT: "hsl(var(--destructive-ext-orel))",
           foreground: "hsl(var(--destructive-foreground-ext-orel))",
         },
-        border: "hsl(var(--border-ext-orel))",
-        input: "hsl(var(--input-ext-orel))",
-        ring: "hsl(var(--ring-ext-orel))",
-        chart: {
+        "ext-border": "hsl(var(--border-ext-orel))",
+        "ext-input": "hsl(var(--input-ext-orel))",
+        "ext-ring": "hsl(var(--ring-ext-orel))",
+        "ext-chart": {
           1: "hsl(var(--chart-1-ext-orel))",
           2: "hsl(var(--chart-2-ext-orel))",
           3: "hsl(var(--chart-3-ext-orel))",
