@@ -1,20 +1,15 @@
 {
-  "manifest_version": 3,
-  "name": "Writesonic",
-  "description": "Writesonic Chrome Extension",
+  "name": "SuperXOrel",
   "version": "1.0.0",
+  "description": "A chrome extension that allows Orel face to float on your screen.",
+  "manifest_version": 3,
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["/assets/js/initializeUI.js"],
-      "run_at": "document_end",
-      "all_frames": true
+      "js": ["assets/contentScript.js"],
+      "css": []
     }
   ],
-  "web_accessible_resources": [
-    {
-      "resources": ["/react/index.js", "/react/vendor.js", "/react/index.css"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  "permissions": [],
+  "host_permissions": ["<all_urls>"]
 }
