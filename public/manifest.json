@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "A chrome extension that allows Orel face to float on your screen.",
   "manifest_version": 3,
+  "icons": {
+    "128": "128.png",
+    "16": "16.png",
+    "32": "32.png"
+  },
   "content_scripts": [
     {
-      "matches": ["https://*/*"],
       "js": ["assets/contentScript.js"],
-      "css": []
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*",
+        "https://pro.x.com/*",
+        "https://pro.twitter.com/*"
+      ],
+      "run_at": "document_end"
     }
   ],
   "permissions": [],

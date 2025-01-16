@@ -1,21 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  prefix: "ext-",
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       borderRadius: {
-        lg: "var(--radius-ext-orel)",
-        md: "calc(var(--radius-ext-orel) - 2px)",
-        sm: "calc(var(--radius-ext-orel) - 4px)",
+        "ext-lg": "var(--radius-ext-orel)",
+        "ext-md": "calc(var(--radius-ext-orel) - 2px)",
+        "ext-sm": "calc(var(--radius-ext-orel) - 4px)",
       },
       colors: {
         "ext-background": "hsl(var(--background-ext-orel))",
         "ext-foreground": "hsl(var(--foreground-ext-orel))",
-        "ext-card": {
-          DEFAULT: "hsl(var(--card-ext-orel))",
-          foreground: "hsl(var(--card-foreground-ext-orel))",
-        },
         "ext-card": {
           DEFAULT: "hsl(var(--popover-ext-orel))",
           foreground: "hsl(var(--popover-foreground-ext-orel))",

@@ -1,3 +1,3 @@
-  export default function Timelines() {
-  return <div className="p-4">Timelines</div>;
+export default function Timelines() {
+  return <div className="ext-p-4">Timelines</div>;
 }

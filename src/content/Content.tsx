@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./style.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import "@/style.css";
+import { MemoryRouter, Routes, Route } from "react-router-dom";
 import Compose from "@/content/components/compose";
 import Layout from "@/content/layout";
 import Activities from "@/content/components/activities";
@@ -12,7 +12,7 @@ import Interactions from "@/content/components/interactions";
 
 const Content: React.FC = () => {
   return (
-    <Router>
+    <MemoryRouter initialEntries={["/messages"]}>
       <Routes>
         {/* Wrap all nested routes with the Layout */}
         <Route path="/" element={<Layout />}>
@@ -25,7 +25,7 @@ const Content: React.FC = () => {
           <Route path="messages" element={<Messages />} />
         </Route>
       </Routes>
-    </Router>
+    </MemoryRouter>
   );
 };
 
